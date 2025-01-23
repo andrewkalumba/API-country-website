@@ -63,7 +63,6 @@ $(() => {
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {
-                    'Authorization': 'Bearer ZFhoSHFCZG1zNHpoTk9DOEdFZjdRRUZDMmhrYXkyS2xuWm9PcDNLRw==', // key used to fetch data but it is not necessary to include it in production.
                     'Content-Type': 'application/json' // specifies that the content type of the request body is json
                 }
             });
