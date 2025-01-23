@@ -5,6 +5,7 @@
 html {
     height: 100vh;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -22,13 +23,17 @@ body {
     padding: 20px;
     margin: 0;
     text-align: center;
-   
+
 }
 
 main {
     background-color: #4B5358;
     text-align: center;
     padding: 16px;
+    background-image: url('../images/pic2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #search {
@@ -36,10 +41,8 @@ main {
     margin: 10px;
     font-size: 1rem;
     background-color: #D2D6EF;
-    color: #050505;
     border-radius: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .button {
@@ -55,6 +58,18 @@ main {
 
 .button:hover {
     background-color: #4B5358;
+}
+
+.image {
+    background-image: url(../images/pic2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    transition: all 0.5s ease;
+    animation: change 15s infinite ease-in-out;
 }
 
 .country-list {
@@ -90,8 +105,10 @@ main {
 .country-card {
     background-color: #727072;
     border: 2px solid #ddd;
-    width: 200px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
+    width: 200px;
+    /* Adjust width as needed */
+    height: 300px;
+    /* Adjust height as needed */
     text-align: center;
     margin: 5px;
     border-radius: 8px;
@@ -115,20 +132,24 @@ main {
     top: 15px;
     width: 80%;
     height: 80%;
-    backface-visibility: hidden; /* Hide back face when facing away */
+    backface-visibility: hidden;
+    /* Hide back face when facing away */
 }
 
 .card-back {
     position: absolute;
     top: 20px;
-    backface-visibility: hidden; /* Hide back face when facing away */
-    transform: rotateY(180deg); /* Hide back face initially by rotating */
+    backface-visibility: hidden;
+    /* Hide back face when facing away */
+    transform: rotateY(180deg);
+    /* Hide back face initially by rotating */
     /* background-color: #727072; /* Optional background for the back */
-     padding: 10px;
+    padding: 10px;
 }
 
 .country-card:hover .card-inner {
-    transform: rotateY(180deg); /* Flip card on hover */
+    transform: rotateY(180deg);
+    /* Flip card on hover */
 }
 
 .countries {
@@ -146,7 +167,9 @@ main {
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 390px) { /*768px*/
+@media screen and (max-width: 390px) {
+
+    /*768px*/
     .country-card {
         background-color: #727072;
         border: 2px solid #ddd;
@@ -159,7 +182,5 @@ main {
         cursor: pointer;
         transition: transform 0.3s;
     }
-    
+
 }
-
-
