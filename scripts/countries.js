@@ -33,7 +33,7 @@ $(() => {
 
         const randomCountries = shuffledCountries.slice(0, 12); //slices random 12 countries
 
-        randomCountries.forEach(country => {  // loop
+        randomCountries.forEach(country => { //This is an array method that executes a provided function once for each array element.
             countryList.append(`
                 <div class="country-card">
                     <div class="card-inner">
